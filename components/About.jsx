@@ -1,6 +1,7 @@
 import React from 'react'
 import InstagramIcon from './icons/Instagram'
 import GithubIcon from './icons/Github'
+import LinkendIcon from './icons/LinkendIcon'
 
 const AboutPage = () => {
   return (
@@ -19,6 +20,9 @@ const AboutPage = () => {
                         <InstagramIcon 
                         className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white' 
                         href={'https://www.instagram.com/odeardika/'}/>
+                        <LinkendIcon 
+                        className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white' 
+                        href={'https://www.linkedin.com/in/putu-ode-irfan-ardika-178373275/'}/>
                         <GithubIcon 
                         className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white' 
                         href={'https://github.com/odeardika'}/>
