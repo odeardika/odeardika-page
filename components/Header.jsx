@@ -50,6 +50,11 @@ const Header = () => {
                                 href="#about" 
                                 className=' text-base text-dark py-2 mx-8 flex group-hover:text-primary'>About Me</a>
                             </li>
+                            <li className='group'>
+                                <a 
+                                href="#portfolio" 
+                                className=' text-base text-dark py-2 mx-8 flex group-hover:text-primary'>Portfolio</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>

@@ -18,13 +18,13 @@ const AboutPage = () => {
                     <p className='font-medium text-base text-secondary mb-6 lg:text-lg'>I have several social media to interact with me like Instagram, Github to see some of my projects and Linked to see my profile</p>
                     <div className='flex items-center'>
                         <InstagramIcon 
-                        className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white' 
+                        className='icon' 
                         href={'https://www.instagram.com/odeardika/'}/>
                         <LinkendIcon 
-                        className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white' 
+                        className='icon' 
                         href={'https://www.linkedin.com/in/putu-ode-irfan-ardika-178373275/'}/>
                         <GithubIcon 
-                        className='w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white' 
+                        className='icon' 
                         href={'https://github.com/odeardika'}/>
                     </div>
                 </div>

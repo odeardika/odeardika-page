@@ -28,3 +28,7 @@ body{
 #hamburger-active > span:nth-child(3) {
     @apply -rotate-45;
 }
+
+.icon{
+    @apply w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white;
+}

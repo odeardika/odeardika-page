@@ -15,11 +15,13 @@ const Hero = () => {
                 </div>
                 <div className='w-full self-end px-4 lg:w-1/2'>
                     <div className='relative mt-10 lg:mt-9 lg:right-0'>
-                        <Image src='/../public/assets/my_pict.png' width={400} height={400} className='max-w-full mx-auto'/>
-                        <span className='absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125'>
-                            <svg width='550' height='550' viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#14b8a6" d="M53.1,-62.1C65.8,-52.6,71.1,-33,70.6,-15.5C70.2,2.1,63.9,17.7,54.1,28C44.3,38.3,31,43.3,19.6,42.5C8.3,41.7,-1,35,-11.6,31.3C-22.2,27.7,-34,27.1,-41.1,20.8C-48.1,14.6,-50.4,2.7,-52.5,-13.4C-54.7,-29.5,-56.7,-49.8,-48,-60C-39.2,-70.2,-19.6,-70.3,0.3,-70.6C20.2,-71,40.4,-71.6,53.1,-62.1Z" 
-                                transform="translate(100 100) scale(1.1)"/>
+                        <Image src='/../public/assets/my_pict.png' alt='Foto Ode' width={400} height={400} className='max-w-full mx-auto'/>
+                        <span className='absolute bottom-12  -z-10 left-1/2 -translate-x-1/2 md:scale-125'>
+                            <svg
+                            width='450' height='500' 
+                            viewBox="0 0 200 200" 
+                            xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14b8a6" d="M20.5,-33.8C26.4,-23.8,31.2,-17.7,38.2,-9.3C45.2,-0.9,54.5,9.9,50.8,15.1C47.2,20.3,30.7,19.9,20,31C9.4,42.1,4.7,64.7,-3.4,69.4C-11.5,74.1,-23,60.8,-34.4,49.9C-45.8,39.1,-57.1,30.6,-53.8,21.9C-50.5,13.2,-32.5,4.2,-23.7,-2.9C-14.8,-10.1,-15,-15.5,-12.5,-26.6C-10.1,-37.7,-5.1,-54.6,1.1,-56.1C7.2,-57.7,14.5,-43.8,20.5,-33.8Z" transform="translate(100 100) scale(1.2)" />
                             </svg>
                         </span>
                     </div>
