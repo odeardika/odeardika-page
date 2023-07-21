@@ -27,8 +27,8 @@ const Portfolio = () => {
                 projectName='Review Checker'
                 imageAlt='Picture of review checker website'
                 projectDesc='Web application to classify a positive or negative review. This application uses the Naive Bayes multinomial algorithm for classifying review text. The tool we use is the Python programming language with the stremlit framework as the frontend'
-                toolIcon={[<PythonIcon className='icon'/>,<StreamlitIcon className='icon' 
-                key='Review Checker'/>]}/>
+                toolIcon={[<PythonIcon className='icon' key='Review Checker'/>,<StreamlitIcon className='icon' key='Review Checker'/>]}
+                key='Review Checker'/>
                 <ProjectSection 
                 imageSource='/../public/assets/portfolio/wisata_finder.png'
                 projectName='Wisata Finder'
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 Website to help find tourist attractions. 
                 We created this application to help spread tourist attractions in Bali. 
                 I act as a backend in making this application using PHP programming language and MYSQL database'
-                toolIcon={[<PHPIcon className='icon'/>,<MysqlIcon className='icon' />]}/>
+                toolIcon={[<PHPIcon key='Wisata Finder' className='icon'/>,<MysqlIcon key='Wisata Finder' className='icon' />]}/>
                 <ProjectSection 
                 imageSource='/../public/assets/portfolio/Penjadwalan.png'
                 key='penjadwalan'
@@ -48,7 +48,7 @@ const Portfolio = () => {
                 Website to view class schedules at informatics campus. 
                 We created this application to help lecturers and students determine class schedules so they don`t collide with each other. 
                 I act as a backend in making this application using PHP programming language and MYSQL database'
-                toolIcon={[<PHPIcon className='icon'/>,<MysqlIcon className='icon'/>]}/>
+                toolIcon={[<PHPIcon key='penjadwalan' className='icon'/>,<MysqlIcon key='penjadwalan' className='icon'/>]}/>
             </div>
         </div>
     </section>
