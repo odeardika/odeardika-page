@@ -14,7 +14,10 @@ const Portfolio = () => {
                 <div className=' max-w-xl mx-auto text-center mb-16'>
                     <h4 className='font-semibold text-lg text-primary mb-2'>Portfolio</h4>
                     <h2 className='font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl'>Recent Project</h2>
-                    <p className='font-medium text-md text-secondary md:text-lg'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officia officiis dicta deserunt quibusdam? Repellendus obcaecati rerum tenetur! Vel, fuga est maiores ipsum porro molestiae quis quidem iure nobis sed.</p>
+                    <p className='font-medium text-md text-secondary md:text-lg'>
+                    Below are some of the projects I recently completed. 
+                    These projects come from school assignments, competitions, 
+                    other needs. To see all the projects can be seen on my <a href="" className='text-primary hover:opacity-70'>github</a>.</p>
                 </div>
             </div>
             <div className='w-full px-4 flex flex-wrap justify-center'>
