@@ -7,7 +7,7 @@ const Contact = ({email}) => {
             <div className='max-w-xl mx-auto text-center mb-16'>
                 <h4 className='font-semibold text-lg text-primary mb-2'>Contact</h4>
                 <h2 className='font-bold text-dark text-2xl mb-4 sm:text-3xl lg:text-4xl'>Contact me at <span>{email}</span></h2>
-                <p className='font-medium text-md text-secondary md:text-lg'>How can i help you? Have a project you'd like to talk about? Send me a message down here. </p>
+                <p className='font-medium text-md text-secondary md:text-lg'>How can i help you? Have a project you would like to talk about? Send me a message down here. </p>
             </div>
         </div>
         <form>

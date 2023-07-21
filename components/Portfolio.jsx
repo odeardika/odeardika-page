@@ -27,10 +27,12 @@ const Portfolio = () => {
                 projectName='Review Checker'
                 imageAlt='Picture of review checker website'
                 projectDesc='Web application to classify a positive or negative review. This application uses the Naive Bayes multinomial algorithm for classifying review text. The tool we use is the Python programming language with the stremlit framework as the frontend'
-                toolIcon={[<PythonIcon className='icon'/>,<StreamlitIcon className='icon' />]}/>
+                toolIcon={[<PythonIcon className='icon'/>,<StreamlitIcon className='icon' 
+                key='Review Checker'/>]}/>
                 <ProjectSection 
                 imageSource='/../public/assets/portfolio/wisata_finder.png'
                 projectName='Wisata Finder'
+                key='Wisata Finder'
                 imageAlt='Picture of wisata finder website'
                 projectDesc='
                 Website to help find tourist attractions. 
@@ -39,6 +41,7 @@ const Portfolio = () => {
                 toolIcon={[<PHPIcon className='icon'/>,<MysqlIcon className='icon' />]}/>
                 <ProjectSection 
                 imageSource='/../public/assets/portfolio/Penjadwalan.png'
+                key='penjadwalan'
                 projectName='Informatics Scheduling System'
                 imageAlt='Picture of informatics scheduling system website'
                 projectDesc='

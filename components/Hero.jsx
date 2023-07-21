@@ -11,7 +11,7 @@ const Hero = () => {
                     <div className='w-fit'>
                         <h1 className=' animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-dark font-bold text-base text-dark md:text-xl'>Wellcome to my page</h1>
                     </div>
-                    <h2 className='block font-bold text-sky-50 text-4xl mt-1 lg:text-5xl'><span className='font-semibold'>I'm</span> Ode Ardika</h2>
+                    <h2 className='block font-bold text-sky-50 text-4xl mt-1 lg:text-5xl'><span className='font-semibold'>I am</span> Ode Ardika</h2>
                     <h2 className='font-medium text-white text-lg mb-3 lg:text-2xl'>a Junior Software Developer</h2>
                     <p className='font-medium text-dark mb-10 leading-relaxed'>
                     And an enthusiastic student deeply passionate about technology, 
@@ -22,7 +22,7 @@ const Hero = () => {
                 </div>
                 <div className='w-full self-end px-4 lg:w-1/2'>
                     <div className='relative mt-10 lg:mt-9 lg:right-0 border-sky-50 border-solid border-2 rounded-full w-fit lg:ml-32 bg-white'>
-                        <Image src='/../public/assets/my_pict.png' alt='Foto Ode' width={400} height={400} className='max-w-full mx-auto rounded-full'/>
+                        <Image src='/../public/assets/my32_pict.png' alt='Foto Ode' width={400} height={400} className='max-w-full mx-auto rounded-full'/>
                         <ImageBackground color='#ffffff'/>
                     </div>
                 </div>
