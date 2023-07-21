@@ -5,6 +5,7 @@ import PythonIcon from './icons/PythonIcon'
 import StreamlitIcon from './icons/StreamlitIcon'
 import PHPIcon from './icons/PHPIcon'
 import BootstrapIcon from './icons/BootstrapIcon'
+import MysqlIcon from './icons/MysqlIcon'
 
 const Portfolio = () => {
   return (
@@ -17,31 +18,34 @@ const Portfolio = () => {
                     <p className='font-medium text-md text-secondary md:text-lg'>
                     Below are some of the projects I recently completed. 
                     These projects come from school assignments, competitions, 
-                    other needs. To see all the projects can be seen on my <a href="" className='text-primary hover:opacity-70'>github</a>.</p>
+                    other needs. To see all the projects can be seen on my <a href="https://github.com/odeardika" className='text-primary hover:opacity-70'>github</a>.</p>
                 </div>
             </div>
             <div className='w-full px-4 flex flex-wrap justify-center'>
                 <ProjectSection 
                 imageSource='/../public/assets/portfolio/klasifikasi_review.png'
                 projectName='Review Checker'
+                imageAlt='Picture of review checker website'
                 projectDesc='Web application to classify a positive or negative review. This application uses the Naive Bayes multinomial algorithm for classifying review text. The tool we use is the Python programming language with the stremlit framework as the frontend'
                 toolIcon={[<PythonIcon className='icon'/>,<StreamlitIcon className='icon' />]}/>
                 <ProjectSection 
                 imageSource='/../public/assets/portfolio/wisata_finder.png'
                 projectName='Wisata Finder'
+                imageAlt='Picture of wisata finder website'
                 projectDesc='
-                Web application to help find tourist attractions. 
+                Website to help find tourist attractions. 
                 We created this application to help spread tourist attractions in Bali. 
-                We are using PHP programming language with bootstrap framework for the frontend'
-                toolIcon={[<PHPIcon className='icon'/>,<BootstrapIcon className='icon' />]}/>
-                
-                <div className='mb-12 p-4 md:w-1/2'>
-                    <div className=' rounded-md shadow-md overflow-hidden'>
-                        <Image src='/../public/assets/portfolio/klasifikasi_review.png' width={600} height={400}/>
-                    </div>
-                    <h3 className='font-semibold text-xl text-dark mt-5 mb-3'>Review Checker</h3>
-                    <p className='font-medium text-base text-secondary '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi eligendi illo ducimus ut et tempora, in nam temporibus, praesentium fuga quam ipsa, debitis consequatur dolor provident officia quae porro eaque.</p>
-                </div>
+                I act as a backend in making this application using PHP programming language and MYSQL database'
+                toolIcon={[<PHPIcon className='icon'/>,<MysqlIcon className='icon' />]}/>
+                <ProjectSection 
+                imageSource='/../public/assets/portfolio/Penjadwalan.png'
+                projectName='Informatics Scheduling System'
+                imageAlt='Picture of informatics scheduling system website'
+                projectDesc='
+                Website to view class schedules at informatics campus. 
+                We created this application to help lecturers and students determine class schedules so they don`t collide with each other. 
+                I act as a backend in making this application using PHP programming language and MYSQL database'
+                toolIcon={[<PHPIcon className='icon'/>,<MysqlIcon className='icon'/>]}/>
             </div>
         </div>
     </section>

@@ -5,7 +5,7 @@ import LinkendIcon from './icons/LinkendIcon'
 
 const AboutPage = () => {
   return (
-    <section id='about' className='pt-36 pb-32'>
+    <section id='about' className='pt-36 pb-32 '>
         <div className='container'>
             <div className='flex flex-wrap'>
                 <div className="w-full px-4 mb-10 lg:w-1/2">

@@ -13,6 +13,7 @@ const Header = () => {
     window.onscroll = () =>{
         const header = document.querySelector('header')
         // position of header from top of the page
+        // const about = document.getElementById('about')
         const fixedNavbar = header.offsetTop
 
         if(window.scrollY > fixedNavbar){
@@ -22,7 +23,7 @@ const Header = () => {
         }
     }
   return (
-    <header className={`${isScrool? 'navbar-fixed':''} bg-transparent absolute top-0 left-0 w-full flex items-center z-10`}>
+    <header className={`${isScrool? 'navbar-fixed bg-transparent':''} absolute top-0 left-0 w-full flex items-center z-10 transition-all duration-200`}>
         <div className='container'>
             <div className='flex items-center justify-between relative'>
                 <div className='px-4'>
@@ -39,7 +40,7 @@ const Header = () => {
                         <span className='hamburger-line'></span>
                         <span className='hamburger-line origin-bottom-left'></span>
                     </button>
-                    <nav id='nav-menu' className={`${isActive ? '':'hidden'} absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none`}>
+                    <nav id='nav-menu' className={`${isActive ? '':'hidden'} bg-white absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none`}>
                         <ul className='block lg:flex'>
                             <li className='group'>
                                 <a 
