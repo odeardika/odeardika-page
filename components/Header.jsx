@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 
 const Header = () => {
@@ -9,19 +9,25 @@ const Header = () => {
     // toggle for hamburger button active or not
     const [isActive, setIsActive] = useState(false)
 
-    window.onscroll = () =>{
+    
+    const navbarFixed = () =>{
         const header = document.querySelector('header')
         // position of header from top of the page
         // const about = document.getElementById('about')
         const fixedNavbar = header.offsetTop
-
+        
         if(window.scrollY > fixedNavbar){
             setIsScrool(true)
         }else{
             setIsScrool(false)
         }
     }
-  return (
+
+    useEffect(()=>{
+        window.addEventListener('scroll',navbarFixed )
+    })
+    
+    return (
     <header className={`${isScrool? 'navbar-fixed bg-transparent':''} absolute top-0 left-0 w-full flex items-center z-10 transition-all duration-200`}>
         <div className='container'>
             <div className='flex items-center justify-between relative'>
