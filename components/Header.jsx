@@ -1,6 +1,5 @@
 'use client'
 
-import { headers } from 'next/dist/client/components/headers'
 import React, { useState } from 'react'
 import Image from 'next/image'
 
