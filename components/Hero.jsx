@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import ImageBackground from './icons/ImageBackground'
+import myPicture from 'public/assets/my_pict.png'
 
 const Hero = () => {
   return (
@@ -22,7 +23,8 @@ const Hero = () => {
                 </div>
                 <div className='w-full self-end px-4 lg:w-1/2'>
                     <div className='relative mt-10 lg:mt-9 lg:right-0 border-sky-50 border-solid border-2 rounded-full w-fit lg:ml-32 bg-white'>
-                        <Image src='/../public/assets/my_pict.png' alt='Foto Ode' width={400} height={400} className='max-w-full mx-auto rounded-full'/>
+                        <Image src={myPicture} className='max-w-full mx-auto rounded-full'/>
+                        {/* <Image src='/../public/assets/my_pict.png' alt='Foto Ode' width={400} height={400} className='max-w-full mx-auto rounded-full'/> */}
                         <ImageBackground color='#ffffff'/>
                     </div>
                 </div>
