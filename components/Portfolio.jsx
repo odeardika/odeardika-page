@@ -1,11 +1,12 @@
 import React from 'react'
 import ProjectSection from './icons/ProjectSection'
-import Image from 'next/image'
 import PythonIcon from './icons/PythonIcon'
 import StreamlitIcon from './icons/StreamlitIcon'
 import PHPIcon from './icons/PHPIcon'
-import BootstrapIcon from './icons/BootstrapIcon'
 import MysqlIcon from './icons/MysqlIcon'
+import clasification from 'public/assets/portfolio/klasifikasi_review.png'
+import schedule from 'public/assets/portfolio/Penjadwalan.png'
+import wifi from 'public/assets/portfolio/wisata_finder.png'
 
 const Portfolio = () => {
   return (
@@ -18,19 +19,18 @@ const Portfolio = () => {
                     <p className='font-medium text-md text-secondary md:text-lg'>
                     Below are some of the projects I recently completed. 
                     These projects come from school assignments, competitions, 
-                    other needs. To see all the projects can be seen on my <a href="https://github.com/odeardika" className='text-primary hover:opacity-70'>github</a>.</p>
+                    other needs. To see all the projects can be seen on my <a href="https://github.com/odeardika" target='_blank' className='text-primary hover:opacity-70'>github</a>.</p>
                 </div>
             </div>
             <div className='w-full px-4 flex flex-wrap justify-center'>
                 <ProjectSection 
-                imageSource='/../public/assets/portfolio/klasifikasi_review.png'
+                imageSource={clasification}
                 projectName='Review Checker'
                 imageAlt='Picture of review checker website'
                 projectDesc='Web application to classify a positive or negative review. This application uses the Naive Bayes multinomial algorithm for classifying review text. The tool we use is the Python programming language with the stremlit framework as the frontend'
                 toolIcon={[{ key: 'wifi-py',component: <PythonIcon className='icon'/>},{key: 'wifi-streamlit',component: <StreamlitIcon className='icon' />}]}/>
-                
                 <ProjectSection 
-                imageSource='/../public/assets/portfolio/wisata_finder.png'
+                imageSource={wifi}
                 projectName='Wisata Finder'
                 key='Wisata Finder'
                 imageAlt='Picture of wisata finder website'
@@ -40,7 +40,7 @@ const Portfolio = () => {
                 I act as a backend in making this application using PHP programming language and MYSQL database'
                 toolIcon={[{ key: 'wifi-php',component: <PHPIcon key='Wisata Finder' className='icon'/>},{key: 'wifi-mysql',component: <MysqlIcon key='Wisata Finder' className='icon' />}]}/>
                 <ProjectSection 
-                imageSource='/../public/assets/portfolio/Penjadwalan.png'
+                imageSource={schedule}
                 key='penjadwalan'
                 projectName='Informatics Scheduling System'
                 imageAlt='Picture of informatics scheduling system website'
