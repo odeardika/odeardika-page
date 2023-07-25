@@ -10,7 +10,7 @@ const ProjectSection = ({imageSource, projectName , projectDesc, toolIcon , imag
         </div>
         <h3 className='font-semibold text-xl text-dark mt-5 mb-3'>{projectName}</h3>
         <div className="flex items-center mb-3">
-        {toolIcon.map((item : any) => <div className='flex'>
+        {toolIcon.map((item : any) => <div key={`${item.key}`} className='flex'>
           {item.component.map((icon : any) => <div key={`${icon} in ${item.key}`}><Icon key={`${icon} in ${item.key}`} className='icon' iconName={icon}/></div>)}
         </div>)}
         </div>
