@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BootstrapIcon = ({className}) => {
+const BootstrapIcon = ({className} : any) => {
   return (
     <div className={className}>
         <svg 

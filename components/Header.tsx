@@ -8,27 +8,24 @@ const Header = () => {
     // toggle for hamburger button active or not
     const [isActive, setIsActive] = useState(false)
     // detect windows size
-    const [isMobile, setIsMobile] = useState()
-
-    
-    const navbarFixed = () =>{
-        const header = document.querySelector('header')
-        // position of header from top of the page
-        // const about = document.getElementById('about')
-        const fixedNavbar = header.offsetTop
-        
-        if(window.scrollY > fixedNavbar){
-            setIsScrool(true)
-        }else{
-            setIsScrool(false)
-        }
-    }
+    const [isMobile, setIsMobile] = useState(false)
 
     useEffect(()=>{
         // check if the page is scrolling down
-        window.addEventListener('scroll',navbarFixed )
+        window.addEventListener('scroll',()=>{
+            const headerPosition = document.querySelector('header')?.offsetTop
+            
+            if(headerPosition === undefined){
+                console.log('header element is undefined')
+                return 0
+            }else{
+                setIsScrool(window.scrollY > headerPosition)
+            }
+        })
         //check if the page size is mobile size
-        window.addEventListener('resize',()=>{setIsMobile(window.innerWidth < 1023)})
+        window.addEventListener('resize',()=>{
+            setIsMobile(window.innerWidth < 1023)
+        })
 
     })
     

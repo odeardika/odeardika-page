@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GithubIcon = ({className, href}) => {
+const GithubIcon = ({className, href}:any) => {
   return (
     <div>
         <a 

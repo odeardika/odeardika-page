@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ImageBackground = ({color}) => {
+const ImageBackground = ({color}:any) => {
   return (
     <span className='absolute bottom-12 -z-10 left-1/2 -translate-x-1/2 md:scale-125'>
         <svg
