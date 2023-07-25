@@ -25,7 +25,7 @@ const Portfolio = () => {
             </div>
             <div className='w-full px-4 flex flex-wrap justify-center'>
                 {listProject.map((project : any)=>
-                    <ProjectSection key={project.projectName} imageSource={project.imageSource} projectName={project.projectName} imageAlt={project.ImageAlt} projectDesc={project.projectDesc} toolIcon={project.toolIcon}/>
+                    <div className={`mb-12 p-4 md:w-1/2`} key={project.projectName}><ProjectSection key={project.projectName} imageSource={project.imageSource} projectName={project.projectName} imageAlt={project.ImageAlt} projectDesc={project.projectDesc} toolIcon={project.toolIcon}/></div>
                 )}
             </div>
         </div>

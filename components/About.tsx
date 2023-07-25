@@ -1,9 +1,12 @@
 import React from 'react'
-import InstagramIcon from './icons/Instagram'
-import GithubIcon from './icons/Github'
-import LinkendIcon from './icons/LinkendIcon'
+import HyperlinkIcon from './icons/HyperlinkIcon'
 
 const AboutPage = () => {
+    const socialMedia = [
+        { iconName : 'instagram', href : 'https://www.instagram.com/odeardika/'},
+        { iconName : 'linkedin', href : 'https://www.linkedin.com/in/putu-ode-irfan-ardika-178373275/'},
+        { iconName : 'github', href : 'https://github.com/odeardika'},
+    ]
   return (
     <section id='about' className='pt-36 pb-32 '>
         <div className='container'>
@@ -17,15 +20,7 @@ const AboutPage = () => {
                     <h3 className='font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10'>Social Media</h3>
                     <p className='font-medium text-base text-secondary mb-6 lg:text-lg'>I have several social media to interact with me like Instagram, Github to see some of my projects and Linked to see my profile</p>
                     <div className='flex items-center'>
-                        <InstagramIcon 
-                        className='icon' 
-                        href={'https://www.instagram.com/odeardika/'}/>
-                        <LinkendIcon 
-                        className='icon' 
-                        href={'https://www.linkedin.com/in/putu-ode-irfan-ardika-178373275/'}/>
-                        <GithubIcon 
-                        className='icon' 
-                        href={'https://github.com/odeardika'}/>
+                        {socialMedia.map((icon : any)=><div key={icon.iconName}><HyperlinkIcon className='icon' iconName={icon.iconName} href={icon.href} key={icon.iconName}/></div>)}
                     </div>
                 </div>
             </div>
